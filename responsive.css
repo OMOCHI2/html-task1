@@ -1,0 +1,151 @@
+/* display > 768 && display <= 1080 */
+
+/* Headerエリア */
+@media screen and (max-width: 1080px) {
+  .Header {
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+  }
+  
+  .Hamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+
+  .Hamburger-line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: top 0.2s, transform 0.2s, opacity 0.3s;
+  }
+  
+  .Hamburger-line:first-child {
+    top: 0;
+  }
+  
+  .Hamburger-line:last-child {
+    top: 100%;
+  }
+
+  .HeaderMenus-list {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+  }
+
+  .HeaderListItem {
+    margin-right: 0;
+  }
+  
+  .HeaderListItem-link {
+    padding: 20px 0;
+  }
+  
+  .HeaderListItem-link>span:first-child {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+  }
+  
+  .HeaderListItem-link>span:last-child {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f79214;
+    letter-spacing: 2px;
+  }
+  
+  .HeaderListItem-button {
+    font-size: 16px;
+    margin: 0 auto;
+    height: 60px;
+    width: 250px;
+  }
+}
+  
+  /* Aboutエリア */
+@media screen and (max-width: 1024px) {
+  .AboutContainer {
+    flex-direction: column;
+  }
+  
+  .About-video {
+    width: 75%;
+    margin-bottom: 16px;
+  }
+  
+  .About-title {
+    width: 75%;
+    margin-left: 0;
+  }
+}
+
+/* display <= 767 FirstViewエリアのみ */
+@media screen and (max-width: 767px) {
+  .FirstView {
+    background-image: none;
+    padding-top: 0;
+  }
+  
+  .FirstView-mobile-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .FirstViewContainer {
+    margin-top: -43%;
+  }
+  
+  .FirstViewContent {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .FirstViewContent-title {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  
+  .FirstViewContent-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .FirstViewContent-images img:first-child {
+    width: 30%;
+  }
+  
+  .FirstViewContent-images img:nth-child(2) {
+    width: 40%;
+  }
+  
+  .FirstViewContent-images img:last-child {
+    width: 30%;
+  }
+  
+  .FirstViewContent-buttons .LeftButton {
+    width: 100%;
+  }
+  
+  .FirstViewContent-buttons .RightButton {
+    display: none;
+  }
+}
